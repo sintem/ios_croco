@@ -8,13 +8,13 @@
 
 import UIKit
 
-class VideoCell: UITableViewCell {
+class ItemCell: UITableViewCell {
 
     @IBOutlet weak var videoImageView: UIImageView!
     @IBOutlet weak var videoTitleLabel: UILabel!
     @IBOutlet weak var videoDescriptionLabel: UILabel!
     
-    func setVideo(video: Video) {
+    func setVideo(video: Item) {
         videoImageView.image = video.image
         videoTitleLabel.text = video.title
         videoDescriptionLabel.text = video.description

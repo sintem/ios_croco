@@ -12,7 +12,7 @@ class UITopViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var videos: [Video] = []
+    var videos: [Item] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,11 +21,11 @@ class UITopViewController: UIViewController {
         
         let viewTitle = self.tabBarItem.title
         switch viewTitle {
-        case "Tops"?:
+        case "TopsView"?:
             imageName = #imageLiteral(resourceName: "dummyPic")
-        case "Trousers"?:
+        case "TrousersView"?:
             imageName = #imageLiteral(resourceName: "buildingDummy")
-        case "Laundry"?:
+        case "LaundryView"?:
             imageName = #imageLiteral(resourceName: "mountainDummy")
         default:
             print("Some other character")
@@ -39,16 +39,16 @@ class UITopViewController: UIViewController {
         tableView.dataSource = self
     }
     
-    func createArray(imgVar: UIImage) -> [Video] {
+    func createArray(imgVar: UIImage) -> [Item] {
         
-        var tempVideos: [Video] = []
+        var tempVideos: [Item] = []
         
-        let video1 = Video(image: imgVar, title: "Shirt", description: "Washed, ironed and hung")
-        let video2 = Video(image: imgVar, title: "Blouse", description: "Washed, ironed and hung")
-        let video3 = Video(image: imgVar, title: "T-Shirt", description: "Washed, ironed and hung")
-        let video4 = Video(image: imgVar, title: "Silk shirt", description: "Washed, ironed and hung")
-        let video5 = Video(image: imgVar, title: "Dinner shirt", description: "Washed, ironed and hung")
-        let video6 = Video(image: imgVar, title: "helllo", description: "Washed, ironed and hung")
+        let video1 = Item(image: imgVar, title: "Shirt", description: "Washed, ironed and hung")
+        let video2 = Item(image: imgVar, title: "Blouse", description: "Washed, ironed and hung")
+        let video3 = Item(image: imgVar, title: "T-Shirt", description: "Washed, ironed and hung")
+        let video4 = Item(image: imgVar, title: "Silk shirt", description: "Washed, ironed and hung")
+        let video5 = Item(image: imgVar, title: "Dinner shirt", description: "Washed, ironed and hung")
+        let video6 = Item(image: imgVar, title: (self.tabBarItem.title)!, description: "Washed, ironed and hung")
         
         tempVideos.append(video1)
         tempVideos.append(video2)
@@ -70,10 +70,10 @@ extension UITopViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let video = videos[indexPath.row]
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "VideoCell") as! VideoCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell") as! ItemCell
         
         cell.setVideo(video: video)
-        //cell.selectionStyle = UITableViewCellSelectionStyle.none
+        cell.selectionStyle = UITableViewCellSelectionStyle.none
         return cell
     }
     
