@@ -1,0 +1,38 @@
+ [
+  {
+  "title": "Shirt",
+  "description": "Ironed, washed, hung",
+  "price": 2.5,
+  "imageName" : "mountainDummy"
+  },
+  {
+  "title": "Blouse",
+  "description": "Ironed, washed, hung",
+  "price": 2.5,
+  "imageName" : "mountainDummy"
+  },
+  {
+  "title": "Shirt",
+  "description": "Ironed, washed, hung",
+  "price": 2.5,
+  "imageName" : "mountainDummy"
+  },
+  {
+  "title": "T-Shirt",
+  "description": "Ironed, washed, hung",
+  "price": 2.5,
+  "imageName" : "mountainDummy"
+  },
+  {
+  "title": "Silk shirt",
+  "description": "Ironed, washed, hung",
+  "price": 2.5,
+  "imageName" : "mountainDummy"
+  },
+  {
+  "title": "Dinner Shirt",
+  "description": "Ironed, washed, hung",
+  "price": 2.5,
+  "imageName" : "mountainDummy"
+  }
+  ]

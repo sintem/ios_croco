@@ -8,71 +8,79 @@
 
 import UIKit
 
+struct WashItem: Decodable {
+    let title: String?
+    let description: String?
+    let price: Float?
+    let imageName: String?
+}
+
 class UITopViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var videos: [Item] = []
+    var listItems: [Item] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        var imageName: UIImage = #imageLiteral(resourceName: "dummyPic")
-        
+        // Check which view is opened, choose right json datafile
         let viewTitle = self.tabBarItem.title
+        var dsTitle: String = "notin"
         switch viewTitle {
         case "TopsView"?:
-            imageName = #imageLiteral(resourceName: "dummyPic")
+            dsTitle = "tops"
         case "TrousersView"?:
-            imageName = #imageLiteral(resourceName: "buildingDummy")
+            dsTitle = "trousers"
         case "LaundryView"?:
-            imageName = #imageLiteral(resourceName: "mountainDummy")
+            dsTitle = "laundry"
         default:
-            print("Some other character")
+            print("Failure at view recognising")
         }
         
-        
-        
-        videos = createArray(imgVar: imageName);
+        listItems = createArray(itemsDS: dsTitle);
         
         tableView.delegate = self
         tableView.dataSource = self
     }
     
-    func createArray(imgVar: UIImage) -> [Item] {
+    func createArray(itemsDS: String) -> [Item] {
+        var washItemsArray: [Item] = []
         
-        var tempVideos: [Item] = []
+        // First retrieve data from local json data file
+        let pathTo_washItemsData = Bundle.main.path(forResource: itemsDS, ofType: "json")
+        let url = URL(fileURLWithPath: pathTo_washItemsData!)
         
-        let video1 = Item(image: imgVar, title: "Shirt", description: "Washed, ironed and hung")
-        let video2 = Item(image: imgVar, title: "Blouse", description: "Washed, ironed and hung")
-        let video3 = Item(image: imgVar, title: "T-Shirt", description: "Washed, ironed and hung")
-        let video4 = Item(image: imgVar, title: "Silk shirt", description: "Washed, ironed and hung")
-        let video5 = Item(image: imgVar, title: "Dinner shirt", description: "Washed, ironed and hung")
-        let video6 = Item(image: imgVar, title: (self.tabBarItem.title)!, description: "Washed, ironed and hung")
+        do {
+            let washItemsData = try Data(contentsOf: url)
+            let washItems = try JSONDecoder().decode([WashItem].self, from: washItemsData)
+            // Print out for testing purposes
+            // print(washItems.count)
+            // print(washItems)
+            // print()
+            
+            // Populate an array with wash items from data files.
+            for i in washItems {
+                let currentItem = Item(image: UIImage(named: i.imageName!)!, title: i.title!, description: i.description!)
+                washItemsArray.append(currentItem)
+            }
+        } catch { print("Error in trying to retrieve data "); print(error) }
         
-        tempVideos.append(video1)
-        tempVideos.append(video2)
-        tempVideos.append(video3)
-        tempVideos.append(video4)
-        tempVideos.append(video5)
-        tempVideos.append(video6)
-
-        return tempVideos
+        return washItemsArray
     }
 }
 
 extension UITopViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return videos.count
+        return listItems.count
     }
     
     // Runs for every cell. i.e How to coonfigure every next appearing cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let video = videos[indexPath.row]
+        let item = listItems[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell") as! ItemCell
         
-        cell.setVideo(video: video)
+        cell.setItem(item: item)
         cell.selectionStyle = UITableViewCellSelectionStyle.none
         return cell
     }
