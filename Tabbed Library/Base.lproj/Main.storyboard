@@ -37,8 +37,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pYG-wU-wcb">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="189"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pYG-wU-wcb">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="194.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="arI-6U-gyG">
                                                     <rect key="frame" x="12" y="164.5" width="351" height="25"/>
@@ -91,14 +91,14 @@
                         <viewLayoutGuide key="safeArea" id="AK2-il-3eN"/>
                     </view>
                     <navigationItem key="navigationItem" title="WSCH" id="4Kh-1N-7jk">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="lKv-KA-3Wj">
+                        <barButtonItem key="backBarButtonItem" title="zzz" id="lKv-KA-3Wj">
+                            <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="profile" id="wUk-S3-1IC">
                             <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="shopping-cart" id="dFo-UC-Aka">
                             <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                            <connections>
-                                <segue destination="XRb-vJ-on7" kind="show" id="1L9-SD-2pV"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -129,8 +129,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Rl-Ob-GCn">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="189"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Rl-Ob-GCn">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="194.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="c87-Gs-NWZ">
                                                     <rect key="frame" x="12" y="164.5" width="351" height="25"/>
@@ -186,11 +186,11 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="fLI-Hc-qiM">
                             <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="profile" id="qlE-T7-1AY">
+                            <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="shopping-cart" id="rc0-bD-Uhe">
                             <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                            <connections>
-                                <segue destination="XRb-vJ-on7" kind="show" id="XKL-B9-KYd"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -200,22 +200,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HkU-9p-8s5" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1780" y="32"/>
-        </scene>
-        <!--OrderView-->
-        <scene sceneID="fNt-i1-Z25">
-            <objects>
-                <viewController title="OrderView" hidesBottomBarWhenPushed="YES" id="XRb-vJ-on7" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hle-a3-YJ3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <viewLayoutGuide key="safeArea" id="um2-SN-Rzx"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LLn-Q1-Cze" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2863" y="32"/>
         </scene>
         <!--LaundryView-->
         <scene sceneID="xsi-9v-KHl">
@@ -237,8 +221,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rEN-5X-Nzy">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="189"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rEN-5X-Nzy">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="194.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="TEl-Dy-ac6">
                                                     <rect key="frame" x="12" y="164.5" width="351" height="25"/>
@@ -300,11 +284,11 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="MDm-Nj-iVu">
                             <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" image="profile" id="8DZ-VK-EMW">
+                            <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="shopping-cart" id="2vg-az-N4k">
                             <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                            <connections>
-                                <segue destination="XRb-vJ-on7" kind="show" id="zpr-Ca-4I7"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -313,7 +297,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SEs-Yg-21R" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1780" y="777"/>
+            <point key="canvasLocation" x="1780" y="806"/>
         </scene>
         <!--Tops-->
         <scene sceneID="lbR-69-ncl">
@@ -409,11 +393,9 @@
     </scenes>
     <resources>
         <image name="basket" width="25" height="25"/>
+        <image name="profile" width="25" height="25"/>
         <image name="shopping-cart" width="25" height="25"/>
         <image name="topBlouse" width="25" height="25"/>
         <image name="trousers" width="25" height="25"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="zpr-Ca-4I7"/>
-    </inferredMetricsTieBreakers>
 </document>
