@@ -31,7 +31,7 @@ class UITopViewController: UIViewController {
             print("Some other character")
         }
         
-        
+        // MASTER BRANCH
         
         videos = createArray(imgVar: imageName);
         
