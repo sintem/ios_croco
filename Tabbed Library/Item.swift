@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class Video {
+class Item {
     var image: UIImage
     var title: String
     var description: String
