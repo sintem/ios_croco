@@ -18,6 +18,7 @@
 		BDACD21A2072AE2800BAECBC /* tops.json in Resources */ = {isa = PBXBuildFile; fileRef = BDACD2192072AE2800BAECBC /* tops.json */; };
 		BDACD21C2072AE6800BAECBC /* trousers.json in Resources */ = {isa = PBXBuildFile; fileRef = BDACD21B2072AE6800BAECBC /* trousers.json */; };
 		BDACD21E2072AE9000BAECBC /* laundry.json in Resources */ = {isa = PBXBuildFile; fileRef = BDACD21D2072AE9000BAECBC /* laundry.json */; };
+		BDD76AA12078C70B000CAD80 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD76AA02078C70B000CAD80 /* OrderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		BDACD2192072AE2800BAECBC /* tops.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tops.json; sourceTree = "<group>"; };
 		BDACD21B2072AE6800BAECBC /* trousers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = trousers.json; sourceTree = "<group>"; };
 		BDACD21D2072AE9000BAECBC /* laundry.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = laundry.json; sourceTree = "<group>"; };
+		BDD76AA02078C70B000CAD80 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				BDACD21520729DFA00BAECBC /* DataFiles */,
 				BD84E71C205AB12500050C55 /* AppDelegate.swift */,
 				BD84E750205AC2CE00050C55 /* UITopViewController.swift */,
+				BDD76AA02078C70B000CAD80 /* OrderViewController.swift */,
 				BD84E752205AD8BB00050C55 /* ItemCell.swift */,
 				BD84E754205AD9D400050C55 /* Item.swift */,
 				BD84E720205AB12500050C55 /* Main.storyboard */,
@@ -167,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD84E751205AC2CE00050C55 /* UITopViewController.swift in Sources */,
+				BDD76AA12078C70B000CAD80 /* OrderViewController.swift in Sources */,
 				BD84E753205AD8BB00050C55 /* ItemCell.swift in Sources */,
 				BD84E71D205AB12500050C55 /* AppDelegate.swift in Sources */,
 				BD84E755205AD9D400050C55 /* Item.swift in Sources */,

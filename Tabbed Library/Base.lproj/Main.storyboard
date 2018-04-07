@@ -26,7 +26,9 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uhk-1g-rXk">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" id="HKh-gM-kYE" customClass="ItemCell" customModule="Tabbed_Library" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="200"/>
@@ -88,14 +90,24 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AK2-il-3eN"/>
                     </view>
-                    <navigationItem key="navigationItem" title="WSCH" id="4Kh-1N-7jk"/>
+                    <navigationItem key="navigationItem" title="WSCH" id="4Kh-1N-7jk">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="lKv-KA-3Wj">
+                            <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="shopping-cart" id="dFo-UC-Aka">
+                            <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <connections>
+                                <segue destination="XRb-vJ-on7" kind="show" id="1L9-SD-2pV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="uhk-1g-rXk" id="piu-IZ-u3O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="11p-QA-pIW" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1780" y="-662.51874062968523"/>
+            <point key="canvasLocation" x="1780" y="-742"/>
         </scene>
         <!--TrousersView-->
         <scene sceneID="KBd-sF-xjF">
@@ -107,7 +119,8 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j0x-1Q-GCd">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" id="0nt-hq-LK7" customClass="ItemCell" customModule="Tabbed_Library" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="200"/>
@@ -169,14 +182,40 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WS9-Gc-dNB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="WSCH" id="cRe-ZG-kJs"/>
+                    <navigationItem key="navigationItem" title="WSCH" id="cRe-ZG-kJs">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="fLI-Hc-qiM">
+                            <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="shopping-cart" id="rc0-bD-Uhe">
+                            <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <connections>
+                                <segue destination="XRb-vJ-on7" kind="show" id="XKL-B9-KYd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="j0x-1Q-GCd" id="ADF-hR-YWS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HkU-9p-8s5" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1780" y="31.934032983508249"/>
+            <point key="canvasLocation" x="1780" y="32"/>
+        </scene>
+        <!--OrderView-->
+        <scene sceneID="fNt-i1-Z25">
+            <objects>
+                <viewController title="OrderView" hidesBottomBarWhenPushed="YES" id="XRb-vJ-on7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hle-a3-YJ3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="um2-SN-Rzx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LLn-Q1-Cze" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2863" y="32"/>
         </scene>
         <!--LaundryView-->
         <scene sceneID="xsi-9v-KHl">
@@ -188,7 +227,8 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Od5-Xc-Whq">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" id="tUg-Jd-5ul" customClass="ItemCell" customModule="Tabbed_Library" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="200"/>
@@ -256,14 +296,24 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Apt-Vr-V3f"/>
                     </view>
-                    <navigationItem key="navigationItem" title="WSCH" id="aXW-x5-24b"/>
+                    <navigationItem key="navigationItem" title="WSCH" id="aXW-x5-24b">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="MDm-Nj-iVu">
+                            <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="shopping-cart" id="2vg-az-N4k">
+                            <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <connections>
+                                <segue destination="XRb-vJ-on7" kind="show" id="zpr-Ca-4I7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="Od5-Xc-Whq" id="ziT-EN-LuE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SEs-Yg-21R" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1780" y="805.54722638680664"/>
+            <point key="canvasLocation" x="1780" y="777"/>
         </scene>
         <!--Tops-->
         <scene sceneID="lbR-69-ncl">
@@ -286,7 +336,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B50-qu-mz0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="879.20000000000005" y="-661.61919040479768"/>
+            <point key="canvasLocation" x="879" y="-743"/>
         </scene>
         <!--Trousers-->
         <scene sceneID="fKf-hm-5L4">
@@ -340,10 +390,11 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="M9S-hh-zAO" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4m1-Iu-rki">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="selectedImageTintColor" red="0.99483581160000001" green="0.99742857910000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="afP-xK-eYm" kind="relationship" relationship="viewControllers" id="qbn-OH-h2E"/>
@@ -358,7 +409,11 @@
     </scenes>
     <resources>
         <image name="basket" width="25" height="25"/>
+        <image name="shopping-cart" width="25" height="25"/>
         <image name="topBlouse" width="25" height="25"/>
         <image name="trousers" width="25" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="zpr-Ca-4I7"/>
+    </inferredMetricsTieBreakers>
 </document>
