@@ -1,15 +1,15 @@
  [
   {
-  "title": "Shirt",
+  "title": "Isa test",
   "description": "Ironed, washed, hung",
   "price": 2.5,
   "imageName" : "buildingDummy"
   },
   {
-  "title": "Blouse",
+  "title": "Git test",
   "description": "Ironed, washed, hung",
   "price": 2.5,
-  "imageName" : "buildingDummy"
+  "imageName" : "mountainDummy"
   },
   {
   "title": "Shirt",
@@ -21,7 +21,7 @@
   "title": "T-Shirt",
   "description": "Ironed, washed, hung",
   "price": 2.5,
-  "imageName" : "buildingDummy"
+  "imageName" : "mountainDummy"
   },
   {
   "title": "Silk shirt",
