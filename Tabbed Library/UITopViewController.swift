@@ -23,6 +23,15 @@ class UITopViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        /* Adds a icon on the title. Scaling is a problem yet.
+        let image : UIImage = UIImage(named: "WSCHlogo4")!
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = image
+        self.navigationItem.titleView = imageView
+        */
+        
         // Check which view is opened, choose right json datafile
         let viewTitle = self.tabBarItem.title
         var dsTitle: String = "notin"
