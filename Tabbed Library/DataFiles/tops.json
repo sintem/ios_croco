@@ -1,35 +1,41 @@
 [
     {
+        "id": "11",
         "title": "Shirt",
         "description": "Ironed, washed, hung",
         "price": 2.5,
         "imageName" : "dummyPic"
     },
     {
+        "id": "12",
         "title": "Blouse",
         "description": "Ironed, washed, hung",
         "price": 2.5,
         "imageName" : "mountainDummy"
     },
     {
-        "title": "Norm",
+        "id": "13",
+        "title": "Pijama",
         "description": "Ironed, washed, hung",
         "price": 2.5,
         "imageName" : "buildingDummy"
     },
     {
+        "id": "14",
         "title": "T-Shirt",
         "description": "Ironed, washed, hung",
         "price": 2.5,
         "imageName" : "dummyPic"
     },
     {
+        "id": "15",
         "title": "Silk shirt",
         "description": "Ironed, washed, hung",
         "price": 2.5,
         "imageName" : "dummyPic"
     },
     {
+        "id": "16",
         "title": "Dinner Shirt",
         "description": "Ironed, washed, hung",
         "price": 2.5,

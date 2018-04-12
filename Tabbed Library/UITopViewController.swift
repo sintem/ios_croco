@@ -9,6 +9,7 @@
 import UIKit
 
 struct WashItem: Decodable {
+    let id: String?
     let title: String?
     let description: String?
     let price: Float?
@@ -24,15 +25,16 @@ class UITopViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        /* Adds a icon on the title. Scaling is a problem yet.
-        let image : UIImage = UIImage(named: "WSCHlogo4")!
+        /* Adds a icon on the title. Scaling is a problem yet. */
+        let image : UIImage = UIImage(named: "navBarIconx2")!
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
         imageView.contentMode = .scaleAspectFit
         imageView.image = image
         self.navigationItem.titleView = imageView
-        */
+ 
         
-        // Check which view is opened, choose right json datafile
+        // Check which view is opened, choose right json datafile to be displayed
+        // Update with creation/edition of the new views
         let viewTitle = self.tabBarItem.title
         var dsTitle: String = "notin"
         switch viewTitle {
@@ -46,7 +48,6 @@ class UITopViewController: UIViewController {
             print("Failure at view recognising")
         }
         
-
         listItems = createArray(itemsDS: dsTitle);
         
         tableView.delegate = self
@@ -63,14 +64,10 @@ class UITopViewController: UIViewController {
         do {
             let washItemsData = try Data(contentsOf: url)
             let washItems = try JSONDecoder().decode([WashItem].self, from: washItemsData)
-            // Print out for testing purposes
-            // print(washItems.count)
-            // print(washItems)
-            // print()
             
             // Populate an array with wash items from data files.
             for i in washItems {
-                let currentItem = Item(image: UIImage(named: i.imageName!)!, title: i.title!, description: i.description!)
+                let currentItem = Item(itemID: i.id!, image: UIImage(named: i.imageName!)!, title: i.title!, description: i.description!)
                 washItemsArray.append(currentItem)
             }
         } catch { print("Error in trying to retrieve data "); print(error) }

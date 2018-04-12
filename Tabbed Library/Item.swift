@@ -13,9 +13,11 @@ class Item {
     var image: UIImage
     var title: String
     var description: String
+    var item_id: String
     
-    init(image: UIImage, title: String, description: String) {
+    init(itemID: String, image: UIImage, title: String, description: String) {
         
+        self.item_id = itemID
         self.image = image
         self.title = title
         self.description = description
