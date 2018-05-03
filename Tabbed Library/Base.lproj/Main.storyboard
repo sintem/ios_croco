@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M9S-hh-zAO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M9S-hh-zAO">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="AvenirNext.ttc">
-            <string>AvenirNext-DemiBold</string>
-            <string>AvenirNext-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--TopsView-->
         <scene sceneID="LhA-pG-d3i">
@@ -105,6 +99,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="shopping-cart" id="dFo-UC-Aka">
                             <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <connections>
+                                <segue destination="5Za-oV-UHP" kind="presentation" id="hNi-Kp-WsZ"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -201,6 +198,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="shopping-cart" id="rc0-bD-Uhe">
                             <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <connections>
+                                <segue destination="5Za-oV-UHP" kind="presentation" identifier="AddItem" id="D1j-Y8-Fab"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -210,6 +210,74 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HkU-9p-8s5" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1780" y="32"/>
+        </scene>
+        <!--Order-->
+        <scene sceneID="yTX-1o-tQh">
+            <objects>
+                <viewController id="fWJ-7A-POu" customClass="OrderPopViewController" customModule="Tabbed_Library" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MCz-Zh-QCK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AKS-qF-gbX">
+                                <rect key="frame" x="10" y="84" width="355" height="110.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send this message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TA9-wl-Maa">
+                                        <rect key="frame" x="0.0" y="0.0" width="142" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" red="0.26248239673479207" green="0.26699828131372288" blue="0.29011496113989632" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="type smth here" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Jsp-hd-hbj">
+                                        <rect key="frame" x="0.0" y="31.5" width="355" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IYD-Ga-zXC">
+                                        <rect key="frame" x="0.0" y="69.5" width="355" height="41"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
+                                        <state key="normal" title="Send">
+                                            <color key="titleColor" red="0.089976980948058921" green="0.59573720296355914" blue="0.98712759067357514" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sendBtn:" destination="fWJ-7A-POu" eventType="touchUpInside" id="h4b-aB-H6S"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Jsp-hd-hbj" secondAttribute="trailing" id="Cbn-bK-628"/>
+                                    <constraint firstAttribute="trailing" secondItem="IYD-Ga-zXC" secondAttribute="trailing" id="PcW-oI-huc"/>
+                                    <constraint firstItem="IYD-Ga-zXC" firstAttribute="leading" secondItem="AKS-qF-gbX" secondAttribute="leading" id="u3r-dd-yfB"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="CcG-73-QYC" firstAttribute="trailing" secondItem="AKS-qF-gbX" secondAttribute="trailing" constant="10" id="AxM-6R-HgQ"/>
+                            <constraint firstItem="AKS-qF-gbX" firstAttribute="leading" secondItem="CcG-73-QYC" secondAttribute="leading" constant="10" id="QRE-g1-BWd"/>
+                            <constraint firstItem="AKS-qF-gbX" firstAttribute="top" secondItem="CcG-73-QYC" secondAttribute="top" constant="20" id="h4R-z4-ASV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CcG-73-QYC"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Order" id="HdR-cN-fhB">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="9uK-BH-V4l">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="cancel:" destination="fWJ-7A-POu" id="IrQ-XN-In4"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="POu-uW-JNB">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="aboveLbl" destination="TA9-wl-Maa" id="rCc-oC-WY7"/>
+                        <outlet property="txtFldSend" destination="Jsp-hd-hbj" id="qq1-4c-0h0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IfD-h4-f5c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3741.5999999999999" y="30.134932533733135"/>
         </scene>
         <!--LaundryView-->
         <scene sceneID="xsi-9v-KHl">
@@ -302,6 +370,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="shopping-cart" id="2vg-az-N4k">
                             <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <connections>
+                                <segue destination="5Za-oV-UHP" kind="presentation" id="ghj-w7-Fq4"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -403,6 +474,24 @@
             </objects>
             <point key="canvasLocation" x="-79" y="32"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NYN-EM-cyD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Za-oV-UHP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GZE-xY-jqB">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fWJ-7A-POu" kind="relationship" relationship="rootViewController" id="YuV-GL-13G"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eOf-mc-RaA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2806" y="32"/>
+        </scene>
     </scenes>
     <resources>
         <image name="basket" width="25" height="25"/>
@@ -411,4 +500,7 @@
         <image name="topBlouse" width="25" height="25"/>
         <image name="trousers" width="25" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="D1j-Y8-Fab"/>
+    </inferredMetricsTieBreakers>
 </document>
