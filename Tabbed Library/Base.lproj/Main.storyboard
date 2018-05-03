@@ -96,6 +96,9 @@
                     <navigationItem key="navigationItem" id="4Kh-1N-7jk">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="profile" id="wUk-S3-1IC">
                             <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <connections>
+                                <segue destination="ohF-Ul-0TI" kind="presentation" id="5tU-D3-D8h"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="shopping-cart" id="dFo-UC-Aka">
                             <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -195,6 +198,9 @@
                     <navigationItem key="navigationItem" id="cRe-ZG-kJs">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="profile" id="qlE-T7-1AY">
                             <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <connections>
+                                <segue destination="ohF-Ul-0TI" kind="presentation" id="4C5-aH-NgG"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="shopping-cart" id="rc0-bD-Uhe">
                             <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -210,6 +216,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HkU-9p-8s5" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1780" y="32"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fsr-zj-6Po">
+            <objects>
+                <navigationController id="ohF-Ul-0TI" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0SQ-oi-yHV">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pTG-oK-FF0" kind="relationship" relationship="rootViewController" id="4lR-sq-ldP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RlR-LK-Tvr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3118" y="-743"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="gyp-M5-SE8">
+            <objects>
+                <viewController id="pTG-oK-FF0" customClass="AccountViewController" customModule="Tabbed_Library" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tdx-7i-xF9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="HKf-cY-L51"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Account" id="Cv1-H7-h7G">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="E0U-ix-ceT">
+                            <connections>
+                                <action selector="cancelAccountNavBtn:" destination="pTG-oK-FF0" id="TMa-yW-Np1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rGN-OM-zOq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4244" y="-743"/>
         </scene>
         <!--Order-->
         <scene sceneID="yTX-1o-tQh">
@@ -252,6 +296,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
+                        <color key="backgroundColor" red="0.99483581160000001" green="0.99742857910000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="CcG-73-QYC" firstAttribute="trailing" secondItem="AKS-qF-gbX" secondAttribute="trailing" constant="10" id="AxM-6R-HgQ"/>
                             <constraint firstItem="AKS-qF-gbX" firstAttribute="leading" secondItem="CcG-73-QYC" secondAttribute="leading" constant="10" id="QRE-g1-BWd"/>
@@ -277,7 +322,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IfD-h4-f5c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3741.5999999999999" y="30.134932533733135"/>
+            <point key="canvasLocation" x="4244" y="29"/>
         </scene>
         <!--LaundryView-->
         <scene sceneID="xsi-9v-KHl">
@@ -367,6 +412,9 @@
                         </barButtonItem>
                         <barButtonItem key="leftBarButtonItem" image="profile" id="8DZ-VK-EMW">
                             <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <connections>
+                                <segue destination="ohF-Ul-0TI" kind="presentation" id="1gt-d7-A1z"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="shopping-cart" id="2vg-az-N4k">
                             <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -490,7 +538,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eOf-mc-RaA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2806" y="32"/>
+            <point key="canvasLocation" x="3119" y="30"/>
         </scene>
     </scenes>
     <resources>
@@ -501,6 +549,7 @@
         <image name="trousers" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="D1j-Y8-Fab"/>
+        <segue reference="hNi-Kp-WsZ"/>
+        <segue reference="5tU-D3-D8h"/>
     </inferredMetricsTieBreakers>
 </document>

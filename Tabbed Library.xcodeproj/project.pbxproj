@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD782E81209B95C1002E46EC /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD782E80209B95C1002E46EC /* AccountViewController.swift */; };
 		BD84E71D205AB12500050C55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD84E71C205AB12500050C55 /* AppDelegate.swift */; };
 		BD84E722205AB12500050C55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD84E720205AB12500050C55 /* Main.storyboard */; };
 		BD84E724205AB12500050C55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD84E723205AB12500050C55 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD782E80209B95C1002E46EC /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		BD84E719205AB12500050C55 /* Tabbed Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tabbed Library.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD84E71C205AB12500050C55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD84E721205AB12500050C55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				BD84E752205AD8BB00050C55 /* ItemCell.swift */,
 				BD84E754205AD9D400050C55 /* Item.swift */,
 				BD84E720205AB12500050C55 /* Main.storyboard */,
+				BD782E80209B95C1002E46EC /* AccountViewController.swift */,
 				BD84E723205AB12500050C55 /* Assets.xcassets */,
 				BD84E725205AB12500050C55 /* LaunchScreen.storyboard */,
 				BD84E728205AB12500050C55 /* Info.plist */,
@@ -174,6 +177,7 @@
 			files = (
 				BD84E751205AC2CE00050C55 /* UITopViewController.swift in Sources */,
 				BDD76AA12078C70B000CAD80 /* OldOrdViewController.swift in Sources */,
+				BD782E81209B95C1002E46EC /* AccountViewController.swift in Sources */,
 				BDE1C93F208FC9EC00A05D8B /* OrderPopViewController.swift in Sources */,
 				BD84E753205AD8BB00050C55 /* ItemCell.swift in Sources */,
 				BD84E71D205AB12500050C55 /* AppDelegate.swift in Sources */,
