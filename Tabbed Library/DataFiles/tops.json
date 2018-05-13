@@ -8,35 +8,35 @@
     },
     {
         "id": "12",
-        "title": "Master branch",
+        "title": "Blouse",
         "description": "Ironed, washed, hung",
         "price": 2.5,
         "imageName" : "mountainDummy"
     },
     {
         "id": "13",
-        "title": "Pijama",
+        "title": "Dinner shirt",
         "description": "Ironed, washed, hung",
         "price": 2.5,
         "imageName" : "buildingDummy"
     },
     {
         "id": "14",
-        "title": "T-Shirt",
-        "description": "Ironed, washed, hung",
-        "price": 2.5,
-        "imageName" : "dummyPic"
-    },
-    {
-        "id": "15",
         "title": "Silk shirt",
         "description": "Ironed, washed, hung",
         "price": 2.5,
         "imageName" : "dummyPic"
     },
     {
+        "id": "15",
+        "title": "T-shirt",
+        "description": "Ironed, washed, hung",
+        "price": 2.5,
+        "imageName" : "dummyPic"
+    },
+    {
         "id": "16",
-        "title": "Dinner Shirt",
+        "title": "Polo",
         "description": "Ironed, washed, hung",
         "price": 2.5,
         "imageName" : "mountainDummy"

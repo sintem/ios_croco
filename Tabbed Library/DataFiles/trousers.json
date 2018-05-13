@@ -1,28 +1,28 @@
  [
   {
   "id": "21",
-  "title": "Shirt",
+  "title": "Trousers",
   "description": "Ironed, washed, hung",
   "price": 2.5,
   "imageName" : "mountainDummy"
   },
   {
   "id": "22",
-  "title": "Blouse",
+  "title": "Pants",
   "description": "Ironed, washed, hung",
   "price": 2.5,
   "imageName" : "mountainDummy"
   },
   {
   "id": "23",
-  "title": "Shirt",
+  "title": "Skirt",
   "description": "Ironed, washed, hung",
   "price": 2.5,
   "imageName" : "mountainDummy"
   },
   {
   "id": "24",
-  "title": "T-Shirt",
+  "title": "Shorts",
   "description": "Ironed, washed, hung",
   "price": 2.5,
   "imageName" : "mountainDummy"

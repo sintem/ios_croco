@@ -1,28 +1,28 @@
  [
   {
   "id": "31",
-  "title": "Isa test",
+  "title": "Suits",
   "description": "Ironed, washed, hung",
   "price": 2.5,
   "imageName" : "buildingDummy"
   },
   {
   "id": "32",
-  "title": "Git test",
+  "title": "Jacket",
   "description": "Ironed, washed, hung",
   "price": 2.5,
   "imageName" : "mountainDummy"
   },
   {
   "id": "33",
-  "title": "Shirt",
+  "title": "Trio-suit",
   "description": "Ironed, washed, hung",
   "price": 2.5,
   "imageName" : "buildingDummy"
   },
   {
   "id": "34",
-  "title": "T-Shirt",
+  "title": "Jack-lack",
   "description": "Ironed, washed, hung",
   "price": 2.5,
   "imageName" : "mountainDummy"
