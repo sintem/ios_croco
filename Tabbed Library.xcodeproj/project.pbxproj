@@ -18,6 +18,7 @@
 		BDACD21A2072AE2800BAECBC /* tops.json in Resources */ = {isa = PBXBuildFile; fileRef = BDACD2192072AE2800BAECBC /* tops.json */; };
 		BDACD21C2072AE6800BAECBC /* trousers.json in Resources */ = {isa = PBXBuildFile; fileRef = BDACD21B2072AE6800BAECBC /* trousers.json */; };
 		BDACD21E2072AE9000BAECBC /* laundry.json in Resources */ = {isa = PBXBuildFile; fileRef = BDACD21D2072AE9000BAECBC /* laundry.json */; };
+		BDB34DB720B1E8F6003AE746 /* DesignCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB34DB620B1E8F6003AE746 /* DesignCellView.swift */; };
 		BDD76AA12078C70B000CAD80 /* OldOrdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD76AA02078C70B000CAD80 /* OldOrdViewController.swift */; };
 		BDE1C93F208FC9EC00A05D8B /* OrderPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE1C93E208FC9EC00A05D8B /* OrderPopViewController.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +37,7 @@
 		BDACD2192072AE2800BAECBC /* tops.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tops.json; sourceTree = "<group>"; };
 		BDACD21B2072AE6800BAECBC /* trousers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = trousers.json; sourceTree = "<group>"; };
 		BDACD21D2072AE9000BAECBC /* laundry.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = laundry.json; sourceTree = "<group>"; };
+		BDB34DB620B1E8F6003AE746 /* DesignCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCellView.swift; sourceTree = "<group>"; };
 		BDD76AA02078C70B000CAD80 /* OldOrdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldOrdViewController.swift; sourceTree = "<group>"; };
 		BDE1C93E208FC9EC00A05D8B /* OrderPopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPopViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +75,7 @@
 				BDACD21520729DFA00BAECBC /* DataFiles */,
 				BD84E71C205AB12500050C55 /* AppDelegate.swift */,
 				BD84E750205AC2CE00050C55 /* UITopViewController.swift */,
+				BDB34DB620B1E8F6003AE746 /* DesignCellView.swift */,
 				BDE1C93E208FC9EC00A05D8B /* OrderPopViewController.swift */,
 				BD84E752205AD8BB00050C55 /* ItemCell.swift */,
 				BD84E754205AD9D400050C55 /* Item.swift */,
@@ -177,6 +180,7 @@
 				BDE1C93F208FC9EC00A05D8B /* OrderPopViewController.swift in Sources */,
 				BD84E753205AD8BB00050C55 /* ItemCell.swift in Sources */,
 				BD84E71D205AB12500050C55 /* AppDelegate.swift in Sources */,
+				BDB34DB720B1E8F6003AE746 /* DesignCellView.swift in Sources */,
 				BD84E755205AD9D400050C55 /* Item.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
