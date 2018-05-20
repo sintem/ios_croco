@@ -89,6 +89,7 @@ extension UITopViewController: UITableViewDataSource, UITableViewDelegate {
         
         cell.setItem(item: item)
         cell.selectionStyle = UITableViewCellSelectionStyle.none
+        
         return cell
     }
     
