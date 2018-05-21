@@ -3,28 +3,28 @@
         "id": "11",
         "title": "Shirt",
         "description": "Ironed, washed, hung",
-        "price": 2.5,
+        "price": 1.90,
         "imageName" : "dummyPic"
     },
     {
         "id": "12",
         "title": "AccountViewDev branch",
         "description": "Ironed, washed, hung",
-        "price": 2.5,
+        "price": 2,
         "imageName" : "mountainDummy"
     },
     {
         "id": "13",
         "title": "Pijama",
         "description": "Ironed, washed, hung",
-        "price": 2.5,
+        "price": 2,
         "imageName" : "buildingDummy"
     },
     {
         "id": "14",
         "title": "T-Shirt",
         "description": "Ironed, washed, hung",
-        "price": 2.5,
+        "price": 1.50,
         "imageName" : "dummyPic"
     },
     {

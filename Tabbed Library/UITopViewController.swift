@@ -42,8 +42,8 @@ class UITopViewController: UIViewController {
             dsTitle = "tops"
         case "TrousersView"?:
             dsTitle = "trousers"
-        case "LaundryView"?:
-            dsTitle = "laundry"
+        case "SuitsView"?:
+            dsTitle = "suits"
         default:
             print("Failure at view recognising")
         }
@@ -67,7 +67,7 @@ class UITopViewController: UIViewController {
             
             // Populate an array with wash items from data files.
             for i in washItems {
-                let currentItem = Item(itemID: i.id!, image: UIImage(named: i.imageName!)!, title: i.title!, description: i.description!)
+                let currentItem = Item(itemID: i.id!, image: UIImage(named: i.imageName!)!, title: i.title!, description: i.description!, price: i.price!)
                 washItemsArray.append(currentItem)
             }
         } catch { print("Error in trying to retrieve data "); print(error) }

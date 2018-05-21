@@ -14,13 +14,15 @@ class Item {
     var title: String
     var description: String
     var item_id: String
+    var price: Float
     
-    init(itemID: String, image: UIImage, title: String, description: String) {
+    init(itemID: String, image: UIImage, title: String, description: String, price: Float) {
         
         self.item_id = itemID
         self.image = image
         self.title = title
         self.description = description
+        self.price = price
     }
 }
 

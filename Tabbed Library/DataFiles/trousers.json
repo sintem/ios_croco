@@ -3,14 +3,14 @@
   "id": "21",
   "title": "Shirt",
   "description": "Ironed, washed, hung",
-  "price": 2.5,
+  "price": 5.70,
   "imageName" : "mountainDummy"
   },
   {
   "id": "22",
   "title": "Blouse",
   "description": "Ironed, washed, hung",
-  "price": 2.5,
+  "price": 4,
   "imageName" : "mountainDummy"
   },
   {
