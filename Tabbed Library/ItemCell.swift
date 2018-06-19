@@ -16,6 +16,9 @@ class ItemCell: UITableViewCell {
     @IBOutlet weak var itemPriceTag: PaddingLabel!
     @IBOutlet weak var counterlabel: UILabel!
     
+    @IBOutlet weak var itemStepper: UIStepper!
+    
+    
     var item_id: String = "nil"
     
     // To be taken care of: functionality, logic
@@ -29,6 +32,8 @@ class ItemCell: UITableViewCell {
        // print(item_id + " x" + String(Int(sender.value)))
     }
     func setItem(item: Item) {
+       // itemStepper.transform = itemStepper.transform.rotated(by: CGFloat(Double.pi / 2))
+
         item_id = item.item_id
         itemImageView.image = item.image
         itemTitleLabel.text = item.title

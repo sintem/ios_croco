@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BD10598420B2FB3D00195DD5 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD10598320B2FB3D00195DD5 /* PaddingLabel.swift */; };
+		BD37E6AF20D85414004129E1 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD37E6AE20D85414004129E1 /* GlobalVariables.swift */; };
 		BD782E81209B95C1002E46EC /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD782E80209B95C1002E46EC /* AccountViewController.swift */; };
 		BD84E71D205AB12500050C55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD84E71C205AB12500050C55 /* AppDelegate.swift */; };
 		BD84E722205AB12500050C55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD84E720205AB12500050C55 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 		BD84E751205AC2CE00050C55 /* UITopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD84E750205AC2CE00050C55 /* UITopViewController.swift */; };
 		BD84E753205AD8BB00050C55 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD84E752205AD8BB00050C55 /* ItemCell.swift */; };
 		BD84E755205AD9D400050C55 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD84E754205AD9D400050C55 /* Item.swift */; };
+		BD956F8820CEE40C0053D7C8 /* DesignedStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD956F8720CEE40C0053D7C8 /* DesignedStepper.swift */; };
 		BDACD2172072A89700BAECBC /* colors.json in Resources */ = {isa = PBXBuildFile; fileRef = BDACD2162072A89700BAECBC /* colors.json */; };
 		BDACD21A2072AE2800BAECBC /* tops.json in Resources */ = {isa = PBXBuildFile; fileRef = BDACD2192072AE2800BAECBC /* tops.json */; };
 		BDACD21C2072AE6800BAECBC /* trousers.json in Resources */ = {isa = PBXBuildFile; fileRef = BDACD21B2072AE6800BAECBC /* trousers.json */; };
@@ -25,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		BD10598320B2FB3D00195DD5 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		BD37E6AE20D85414004129E1 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		BD782E80209B95C1002E46EC /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		BD84E719205AB12500050C55 /* Tabbed Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tabbed Library.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD84E71C205AB12500050C55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +38,7 @@
 		BD84E750205AC2CE00050C55 /* UITopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITopViewController.swift; sourceTree = "<group>"; };
 		BD84E752205AD8BB00050C55 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		BD84E754205AD9D400050C55 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		BD956F8720CEE40C0053D7C8 /* DesignedStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignedStepper.swift; sourceTree = "<group>"; };
 		BDACD2162072A89700BAECBC /* colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = colors.json; sourceTree = "<group>"; };
 		BDACD2192072AE2800BAECBC /* tops.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tops.json; sourceTree = "<group>"; };
 		BDACD21B2072AE6800BAECBC /* trousers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = trousers.json; sourceTree = "<group>"; };
@@ -80,7 +84,9 @@
 				BDE1C93E208FC9EC00A05D8B /* OrderPopViewController.swift */,
 				BD782E80209B95C1002E46EC /* AccountViewController.swift */,
 				BD84E720205AB12500050C55 /* Main.storyboard */,
+				BD37E6AE20D85414004129E1 /* GlobalVariables.swift */,
 				BD10598320B2FB3D00195DD5 /* PaddingLabel.swift */,
+				BD956F8720CEE40C0053D7C8 /* DesignedStepper.swift */,
 				BD84E723205AB12500050C55 /* Assets.xcassets */,
 				BD84E725205AB12500050C55 /* LaunchScreen.storyboard */,
 				BD84E728205AB12500050C55 /* Info.plist */,
@@ -178,9 +184,11 @@
 				BD84E751205AC2CE00050C55 /* UITopViewController.swift in Sources */,
 				BD782E81209B95C1002E46EC /* AccountViewController.swift in Sources */,
 				BDE1C93F208FC9EC00A05D8B /* OrderPopViewController.swift in Sources */,
+				BD37E6AF20D85414004129E1 /* GlobalVariables.swift in Sources */,
 				BD10598420B2FB3D00195DD5 /* PaddingLabel.swift in Sources */,
 				BD84E753205AD8BB00050C55 /* ItemCell.swift in Sources */,
 				BD84E71D205AB12500050C55 /* AppDelegate.swift in Sources */,
+				BD956F8820CEE40C0053D7C8 /* DesignedStepper.swift in Sources */,
 				BD84E755205AD9D400050C55 /* Item.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
