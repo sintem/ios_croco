@@ -94,7 +94,7 @@
                                                     </connections>
                                                 </stepper>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€ 21" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bfa-Jg-iIK" customClass="PaddingLabel" customModule="Tabbed_Library" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="32" width="59" height="26"/>
+                                                    <rect key="frame" x="0.0" y="32" width="40" height="26"/>
                                                     <color key="backgroundColor" red="0.2520442034" green="0.2520442034" blue="0.2520442034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="88" id="PqE-pY-2Ne"/>
@@ -233,7 +233,7 @@
                                                     </connections>
                                                 </stepper>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€ 21" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HuP-be-ccD" customClass="PaddingLabel" customModule="Tabbed_Library" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="32" width="59" height="26"/>
+                                                    <rect key="frame" x="0.0" y="32" width="40" height="26"/>
                                                     <color key="backgroundColor" red="0.2520442034" green="0.2520442034" blue="0.2520442034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="88" id="wg7-Do-vqn"/>
@@ -550,7 +550,7 @@
                                                     </connections>
                                                 </stepper>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€ 21" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSM-bi-XEW" customClass="PaddingLabel" customModule="Tabbed_Library" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="32" width="59" height="26"/>
+                                                    <rect key="frame" x="0.0" y="32" width="40" height="26"/>
                                                     <color key="backgroundColor" red="0.2520442034" green="0.2520442034" blue="0.2520442034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="88" id="maj-U6-xbx"/>
