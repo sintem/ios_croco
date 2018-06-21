@@ -1,44 +1,30 @@
  [
   {
   "id": "21",
-  "title": "Shirt",
+  "title": "Trousers",
   "description": "Ironed, washed, hung",
   "price": 5.70,
-  "imageName" : "mountainDummy"
+  "imageName" : "trousers-1"
   },
   {
   "id": "22",
-  "title": "Blouse",
+  "title": "Shorts",
   "description": "Ironed, washed, hung",
   "price": 4,
-  "imageName" : "mountainDummy"
+  "imageName" : "shorts"
   },
   {
   "id": "23",
-  "title": "Shirt",
+  "title": "Jeans",
   "description": "Ironed, washed, hung",
   "price": 2.5,
-  "imageName" : "mountainDummy"
+  "imageName" : "jeans"
   },
   {
-  "id": "24",
-  "title": "T-Shirt",
+  "id": "23",
+  "title": "Skirt",
   "description": "Ironed, washed, hung",
   "price": 2.5,
-  "imageName" : "mountainDummy"
-  },
-  {
-  "id": "25",
-  "title": "Silk shirt",
-  "description": "Ironed, washed, hung",
-  "price": 2.5,
-  "imageName" : "mountainDummy"
-  },
-  {
-  "id": "26",
-  "title": "Dinner Shirt",
-  "description": "Ironed, washed, hung",
-  "price": 2.5,
-  "imageName" : "mountainDummy"
+  "imageName" : "skirt"
   }
 ]

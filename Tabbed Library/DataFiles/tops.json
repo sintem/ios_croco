@@ -4,41 +4,27 @@
         "title": "Shirt",
         "description": "Ironed, washed, hung",
         "price": 1.90,
-        "imageName" : "dummyPic"
+        "imageName" : "shirt"
     },
     {
         "id": "12",
-        "title": "AccountViewDev branch",
+        "title": "Blouse",
         "description": "Ironed, washed, hung",
         "price": 2,
-        "imageName" : "mountainDummy"
+        "imageName" : "blouse"
     },
     {
         "id": "13",
-        "title": "Pijama",
+        "title": "T-Shirt",
         "description": "Ironed, washed, hung",
         "price": 2,
-        "imageName" : "buildingDummy"
+        "imageName" : "t-shirt"
     },
     {
         "id": "14",
-        "title": "T-Shirt",
+        "title": "Jacket",
         "description": "Ironed, washed, hung",
         "price": 1.50,
-        "imageName" : "dummyPic"
-    },
-    {
-        "id": "15",
-        "title": "Silk shirt",
-        "description": "Ironed, washed, hung",
-        "price": 2.5,
-        "imageName" : "dummyPic"
-    },
-    {
-        "id": "16",
-        "title": "Dinner Shirt",
-        "description": "Ironed, washed, hung",
-        "price": 2.5,
-        "imageName" : "mountainDummy"
+        "imageName" : "jacket"
     }
 ]
