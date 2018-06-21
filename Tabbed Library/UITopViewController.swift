@@ -64,10 +64,18 @@ class UITopViewController: UIViewController {
         do {
             let washItemsData = try Data(contentsOf: url)
             let washItems = try JSONDecoder().decode([WashItem].self, from: washItemsData)
-            
+            var counterFromData: Double
             // Populate an array with wash items from data files.
             for i in washItems {
-                let currentItem = Item(itemID: i.id!, image: UIImage(named: i.imageName!)!, title: i.title!, description: i.description!, price: i.price!)
+                
+                if(GlobalVariables.sharedManager.piePrice[i.id!] != nil){
+                    counterFromData = GlobalVariables.sharedManager.piePrice[i.id!]!
+                }else{
+                    counterFromData = 0
+                }
+                
+                
+                let currentItem = Item(itemID: i.id!, image: UIImage(named: i.imageName!)!, title: i.title!, description: i.description!, price: i.price!, counter: counterFromData)
                 washItemsArray.append(currentItem)
             }
         } catch { print("Error in trying to retrieve data "); print(error) }

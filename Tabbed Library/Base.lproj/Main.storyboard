@@ -49,7 +49,7 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <stepper opaque="NO" multipleTouchEnabled="YES" alpha="0.87" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="U3b-Zb-F3M" customClass="DesignedStepper" customModule="Tabbed_Library" customModuleProvider="target">
+                                                <stepper opaque="NO" multipleTouchEnabled="YES" alpha="0.87" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" autorepeat="NO" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="U3b-Zb-F3M" customClass="DesignedStepper" customModule="Tabbed_Library" customModuleProvider="target">
                                                     <rect key="frame" x="293" y="88.5" width="94" height="29"/>
                                                     <rect key="contentStretch" x="0.0" y="0.0" width="0.59999999999999998" height="1"/>
                                                     <userDefinedRuntimeAttributes>
@@ -94,7 +94,7 @@
                                                     </connections>
                                                 </stepper>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€ 21" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bfa-Jg-iIK" customClass="PaddingLabel" customModule="Tabbed_Library" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="32" width="40" height="26"/>
+                                                    <rect key="frame" x="0.0" y="32" width="59" height="26"/>
                                                     <color key="backgroundColor" red="0.2520442034" green="0.2520442034" blue="0.2520442034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="88" id="PqE-pY-2Ne"/>
@@ -225,7 +225,7 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <stepper opaque="NO" multipleTouchEnabled="YES" alpha="0.89999997615814209" tag="-1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="LLp-9O-fWC" customClass="DesignedStepper" customModule="Tabbed_Library" customModuleProvider="target">
+                                                <stepper opaque="NO" multipleTouchEnabled="YES" alpha="0.89999997615814209" tag="-1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" autorepeat="NO" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="LLp-9O-fWC" customClass="DesignedStepper" customModule="Tabbed_Library" customModuleProvider="target">
                                                     <rect key="frame" x="293" y="88.5" width="94" height="29"/>
                                                     <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                     <connections>
@@ -233,7 +233,7 @@
                                                     </connections>
                                                 </stepper>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€ 21" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HuP-be-ccD" customClass="PaddingLabel" customModule="Tabbed_Library" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="32" width="40" height="26"/>
+                                                    <rect key="frame" x="0.0" y="32" width="59" height="26"/>
                                                     <color key="backgroundColor" red="0.2520442034" green="0.2520442034" blue="0.2520442034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="88" id="wg7-Do-vqn"/>
@@ -542,7 +542,7 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <stepper opaque="NO" multipleTouchEnabled="YES" alpha="0.90000000000000002" tag="-1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="c3d-Ks-fml" customClass="DesignedStepper" customModule="Tabbed_Library" customModuleProvider="target">
+                                                <stepper opaque="NO" multipleTouchEnabled="YES" alpha="0.90000000000000002" tag="-1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" autorepeat="NO" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="c3d-Ks-fml" customClass="DesignedStepper" customModule="Tabbed_Library" customModuleProvider="target">
                                                     <rect key="frame" x="293" y="88.5" width="94" height="29"/>
                                                     <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                     <connections>
@@ -550,7 +550,7 @@
                                                     </connections>
                                                 </stepper>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€ 21" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSM-bi-XEW" customClass="PaddingLabel" customModule="Tabbed_Library" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="32" width="40" height="26"/>
+                                                    <rect key="frame" x="0.0" y="32" width="59" height="26"/>
                                                     <color key="backgroundColor" red="0.2520442034" green="0.2520442034" blue="0.2520442034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="88" id="maj-U6-xbx"/>
@@ -763,7 +763,7 @@
         <image name="trousers" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="D1j-Y8-Fab"/>
-        <segue reference="4C5-aH-NgG"/>
+        <segue reference="ghj-w7-Fq4"/>
+        <segue reference="1gt-d7-A1z"/>
     </inferredMetricsTieBreakers>
 </document>

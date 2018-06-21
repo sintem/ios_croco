@@ -15,14 +15,16 @@ class Item {
     var description: String
     var item_id: String
     var price: Float
+    var counter: Double
     
-    init(itemID: String, image: UIImage, title: String, description: String, price: Float) {
+    init(itemID: String, image: UIImage, title: String, description: String, price: Float, counter: Double) {
         
         self.item_id = itemID
         self.image = image
         self.title = title
         self.description = description
         self.price = price
+        self.counter = counter
     }
 }
 

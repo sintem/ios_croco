@@ -66,7 +66,6 @@ class OrderPopViewController: UIViewController {
         formatter.dateStyle = .medium
         formatter.timeStyle = .short
 
-        
         let dateString = formatter.string(from: timePicker.date)
         
         pickTimeTxt.text = "\(dateString )"
