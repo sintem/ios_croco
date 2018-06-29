@@ -3,14 +3,28 @@
   "id": "31",
   "title": "suit",
   "description": "Ironed, washed, hung",
-  "price": 3.0,
+  "price": 9.90,
   "imageName" : "suit"
   },
   {
   "id": "32",
   "title": "Occasional suit",
   "description": "Ironed, washed, hung",
-  "price": 2.5,
+  "price": 14.90,
   "imageName" : "occasionalSuit"
+  },
+  {
+  "id": "33",
+  "title": "Skirt",
+  "description": "Ironed, washed, hung",
+  "price": 5.90,
+  "imageName" : "skirt"
+  },
+  {
+  "id": "34",
+  "title": "Trousers",
+  "description": "Ironed, washed, hung",
+  "price": 5.70,
+  "imageName" : "trousers-1"
   }
 ]

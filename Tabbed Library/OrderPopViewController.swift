@@ -10,9 +10,6 @@ import UIKit
 
 class OrderPopViewController: UIViewController {
     
-    @IBOutlet weak var aboveLbl: UILabel!
-    @IBOutlet weak var txtFldSend: UITextField!
-    
     @IBOutlet weak var pickAddressTxt: UITextField!
     @IBOutlet weak var pickTimeTxt: UITextField!
 
@@ -36,11 +33,6 @@ class OrderPopViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    // MARK: Action
-    @IBAction func sendBtn(_ sender: Any) {
-        aboveLbl.text = "You typed: " + (txtFldSend.text)!
     }
     
     // Date picker
